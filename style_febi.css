@@ -21,7 +21,7 @@ body{
     padding-right: 3rem;
     font-size: 30px;
     color:#eb536d;         
-    font-family: 'Gilroy';
+    font-family: 'Gilroy','Metropolis','Segoe UI',sans-serif;
     text-shadow: 6px 6px 0px rgb(133, 186, 207);
 }
 
@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     margin: auto;
     align-items: center;
-    font-family: 'Prompt',sans-serif;
+    font-family: sans-serif;
 }
 .image{
     border: solid #ef7c8f 1rem;
@@ -58,7 +58,7 @@ li{
 }
 .closing{
     padding-top: 0.75rem;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy','Metropolis','Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
 }
 .flower{
     display: flex;
