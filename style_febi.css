@@ -1,28 +1,57 @@
-body{
-    background-color: rgb(133, 186, 207);
-    
+html{
+    height: 100%;
 }
+
+body{
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    background-attachment: fixed;
+}
+
 .all{
     background-color:#fae8e0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 25px;
     padding: 1px;
     padding-bottom: 2rem;
     width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
+
 
 .header{
     padding-top: 0.5rem;
     padding-left: 5rem;
     padding-right: 3rem;
     font-size: 30px;
-    color:#eb536d;         
-    font-family: 'Gilroy','Metropolis','Segoe UI',sans-serif;
+    color:#eb536d;  
+    font-family: 'Lilita One', Gilroy, Segoe UI, sans-serif;
+    letter-spacing: 0.75px;
     text-shadow: 6px 6px 0px rgb(133, 186, 207);
+    animation-name: hello;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes hello{
+    0%{
+        color:#eb536d;
+    }
+    25%{
+        color: #ef7c8f
+    }
+    50%{
+        color: white;
+    }
+    75%{
+        color: #ef7c8f;
+    }
+    100%{
+        color:#eb536d;
+    }
+    }
+
+.header:hover{
+    color:white;
 }
 
 .main-container{
@@ -32,16 +61,23 @@ body{
     align-items: center;
     font-family: sans-serif;
 }
+
 .image{
     border: solid #ef7c8f 1rem;
     border-width: 0.5rem;
     margin-bottom: 1rem;
     padding: 0.25rem;
 }
+
+.image:hover, .image:active{
+    transform: scale(1.1);
+}
+
 .card-title{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 600;   
 }
+
 li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -55,14 +91,37 @@ li{
     border-radius: 25px;
     padding: 1rem;
     width: 20rem;
+    position: relative;
 }
+
+.my-card:hover, .my-card:active{
+    transform: scale(1.075);
+    animation-name: card-animate;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-animate{
+    0%{
+        left: 0px;
+    } 
+    100%{
+        left: 80px;
+    }
+}
+
 .closing{
     padding-top: 0.75rem;
-    font-family: 'Gilroy','Metropolis','Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Gilroy, Metropolis,'Comic Sans MS', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(133, 186, 207);
+    opacity:0.5;
 }
+
+.closing:hover, .closing:active{
+    opacity: 1;
+    }
+
 .flower{
     display: flex;
-    flex-direction: column;
     margin: auto;
-    align-items: center;
 }
